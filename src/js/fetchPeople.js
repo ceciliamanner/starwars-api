@@ -1,7 +1,5 @@
 import { openModal } from "./renderData";
 
-
-
 const peopleImages = {
     "Luke Skywalker":"/images/LukeSkywalker.jpeg",
     "C-3PO":"/images/C-3PO.jpeg",
@@ -28,7 +26,7 @@ export const fetchPeople = async () => {
             const imageUrl = peopleImages[person.name] || "./src/assets/images/default.jpg";
 
             card.innerHTML = `
-                <img src="${imageUrl}" alt="${person.name}" class="film-image"/>
+                <img src="${imageUrl}" alt="${person.name}" class="card-image"/>
                 <h3>${person.name}</h3>
             `;
             recordCards.append(card); 
@@ -42,9 +40,8 @@ export const fetchPeople = async () => {
 
         
     } catch (error) {
-        console.log("trouble");
+        console.log("something went wrong");
         
     }
 }
-document.querySelector(".category__button--people").addEventListener("click", fetchPeople);
 

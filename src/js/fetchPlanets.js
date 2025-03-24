@@ -25,7 +25,7 @@ export const fetchPlanets = async () => {
             const imageUrl = planetImages[planet.name] || "./src/assets/images/default.jpg";
 
             card.innerHTML = `
-            <img src="${imageUrl}" alt="${planet.name}" class="film-image"/>
+            <img src="${imageUrl}" alt="${planet.name}" class="card-image"/>
             <h3>${planet.name}</h3>
         `;
 
@@ -40,9 +40,8 @@ export const fetchPlanets = async () => {
         
         
     } catch (error) {
-        console.log("you fucked it up");
+        console.log("something went wrong");
         
     }
 
 }
-document.querySelector(".category__button--planets").addEventListener("click", fetchPlanets);

@@ -25,7 +25,7 @@ export const fetchVechicles = async () => {
             const imageUrl = vechicleImages[vehicle.name] || "./src/assets/images/default.jpg";
 
             card.innerHTML = `
-                <img src="${imageUrl}" alt="${vehicle.name}" class="film-image"/>
+                <img src="${imageUrl}" alt="${vehicle.name}" class="card-image"/>
                 <h3>${vehicle.name}</h3>
             `;
 
@@ -35,16 +35,13 @@ export const fetchVechicles = async () => {
                 openModal(vehicle, "vehicles");
               });
 
-         
 
-        });
-
-        
+        });  
         
     } catch (error) {
+        console.log("something went wrong");
         
     }
 
-
 };
-document.querySelector(".category__button--vehicles").addEventListener("click", fetchVechicles);
+

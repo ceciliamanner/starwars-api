@@ -35,7 +35,7 @@ const getPropertiesForCategory = (record, category) => {
           "Passengers": record.passengers
         };
       default:
-        return { "No info": "No data available" };
+        return { "Message": "No data available" };
     }
   };
 
