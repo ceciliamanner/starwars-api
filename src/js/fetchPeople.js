@@ -1,3 +1,4 @@
+import handleError from "./handleError";
 import { openModal } from "./renderData";
 
 const peopleImages = {
@@ -40,7 +41,7 @@ export const fetchPeople = async () => {
 
         
     } catch (error) {
-        console.log("something went wrong");
+        handleError(fetchPeople);
         
     }
 }

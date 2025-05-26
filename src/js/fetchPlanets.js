@@ -1,3 +1,4 @@
+import handleError from "./handleError";
 import { openModal } from "./renderData";
 
 const planetImages = {
@@ -40,7 +41,7 @@ export const fetchPlanets = async () => {
         
         
     } catch (error) {
-        console.log("something went wrong");
+        handleError(fetchPlanets);
         
     }
 

@@ -1,4 +1,6 @@
+import handleError from "./handleError";
 import { openModal } from "./renderData";
+
 
 const filmImages = {
     "A New Hope": "/images/newHope.jpeg",
@@ -40,7 +42,7 @@ export const fetchFilms = async () => {
 
       
     } catch (error) {
-        console.log("something went wrong");
+        handleError(fetchFilms); 
     }
     
 };
