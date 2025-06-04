@@ -6,7 +6,16 @@ It uses the [SWAPI API](https://swapi.py4e.com/) to fetch and display data about
 
 The project is built using **HTML, CSS, and JavaScript**, bundled with **Vite**. All data is dynamically loaded from the API and presented in one single HTML page.
 
+## Live Demo
+🌍 [View the deployed site on Netlify] https://starwars-api1.netlify.app/ 
+
 ## Installation
+To run the project locally:
+
+git clone https://github.com/ceciliamanner/starwars-api.git
+cd starwars-api
+npm install
+npm run dev
 
 
 ## Usage
@@ -29,5 +38,5 @@ All content is dynamically rendered based on the selected category and fetched d
 - Vite bundling and development setup
 
 ## License
+This project is licensed under MIT License.
 
-## Contact 
